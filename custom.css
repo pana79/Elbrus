@@ -1,0 +1,271 @@
+/* 
+The 100–900 values roughly correspond to the following common weight names:
+
+100 — Thin / Extra Thin / Hairline
+200 — Extra Light / Ultra Light
+300 — Light
+400 — Regular (Normal)
+500 — Medium
+600 — Semi Bold / Demi Bold
+700 — Bold
+800 — Extra Bold / Ultra Bold
+900 — Black / Ultra Black / Heavy */
+
+
+*,*::before,*::after {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration-line: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background:#D4B27F;
+    text-align: center;
+    width: 1440px;
+    height: 200px;
+    z-index: 99;
+    position: relative;
+    margin:0 auto;
+}
+nav{
+    max-width:960px;
+    margin:0 auto;
+    padding-top:30px;
+    display: grid;
+    grid-template-columns: 243px 3fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+/* Item-a in the grid */
+.logo{
+    cursor:pointer;
+    min-width:194px;
+    min-height: 55px;
+    /* height: 100%;
+    width: 100%; */
+}
+
+/* Item-b in the grid */
+.nav__links{
+    
+    font-weight: 600;
+    font-size:26px;
+
+    justify-self: start;
+    align-self: center;
+    margin-top:90px;
+}
+.nav__links li{
+    align-self: baseline;
+    display:inline-block;
+    padding:0px 20px;
+}
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+    color:#2C5B0E
+}
+.nav__links li a:hover{
+    color:#618B47;
+}
+
+/* Item-c in the grid */
+.btnPosition{
+    justify-self: end;
+    align-self: center;
+    margin-top:10px;
+}
+button{
+    width: 194px;
+    height: 55px;
+    font-family:"Open sans";
+    font-weight: 600;
+    font-size:26px;
+    border-radius: 8px;
+    border:none;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+.btnPrimary{
+    background-color:#E77A1C;
+    color:#FBF7F1;
+}
+.btnPrimary:hover{
+    background-color: #EA8E3E;
+}
+.btnSecondary{
+    background-color:#FBF7F1;
+    color:#E77A1C;
+    border:3px solid #E77A1C;
+}
+.btnSecondary:hover{
+    background-color: #FFF;
+}
+
+.box{
+    height: 20px;
+}
+footer{
+    background:#D4B27F;
+    width: 1440px;
+    height: 200px;
+    margin:0 auto;
+  
+}
+.footerItem{
+    max-width:960px;
+    margin:0 auto;
+    padding-top:30px;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 243px 1fr 1fr;
+}
+
+#item-b{
+    align-self: center;
+    justify-self: right;
+}
+#item-c{
+    /* align-self: center; */
+    justify-self: right;
+    margin:15px;
+}
+/* overview eller home sidans struktur */
+
+
+.container1{
+    width:1440px;
+    height: 1024px;
+    /* z-index: -1;*/
+    position: relative; 
+    margin:-200px auto 100px auto;
+}
+.boxSec1{
+    position: absolute;
+    top:385px;
+    left: 250px;
+}
+.container2{
+    display: flex;
+    max-width:960px;
+    margin:100px auto;
+    justify-content: space-between;
+
+}
+.boxSec2{
+    width:278px;
+    margin-bottom: 120px;
+}
+.container3{
+
+    width:1440px;
+    height: 1024px;
+    background-color: rgb(251, 247, 241);
+    margin:0px auto;
+    padding:105px 126px;
+    display: flex;
+}
+.boxSec3{
+    /* width:320px; */
+    margin-left: 96px;
+    align-self:center;
+}
+.container4{
+
+    width:1440px;
+    height: 1024px;
+    background-color: #FFF;
+    margin:0 auto;
+    display: flex;
+
+}
+.boxSec4{
+    /* width:320px; */
+    margin:auto auto;
+    position: relative;
+
+}
+.flexItem{
+   width:  780px;/* 948px-168px */
+    position: absolute;
+    top:200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btnPos4{
+    /* width:421px; */
+    
+    align-self: flex-end;
+
+   
+}
+/* fonts and colors */
+.h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C5B0E
+}
+
+.p1{
+    font-size: 16px;
+    font-weight: normal;
+    color: #2C5B0E;
+   
+}
+.h1{
+    font-size: 40px;
+    font-weight: 700; 
+    color: #FBF7F1;
+    margin-bottom:40px;
+}
+.hOla{
+    font-size: 26px;
+    font-weight: 600; 
+    color: #2C5B0E;
+    margin-bottom:40px;
+}
+
+.h6{
+    font-size: 26px;
+    font-weight: 600; 
+    color: #2C5B0E;
+    margin-bottom:40px;
+}
+.pp1{
+    width:575px;
+    font-size: 24px;
+    font-weight: 600; 
+    color: #FBF7F1;
+    margin-bottom:35px;
+    line-height: 1.8;
+}
+.p2{
+   
+    font-size: 24px;
+    font-weight: normal;
+    color: #2C5B0E;
+    margin-bottom:50px;
+    /* padding-right:30px; */
+    line-height: 1.8;
+}
+.pOla{
+    font-size: 24px;
+    font-weight: normal;
+    color: #2C5B0E;
+    margin-bottom:35px;
+    padding-right:30px;
+    line-height: 1.8;
+}
+.hS4{
+    width: 421px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #FBF7F1;
+    margin-bottom:35px;
+    margin-left:53px;
+    line-height: 1.8;
+}

@@ -1,0 +1,41 @@
+<div class="container1" > 
+    <img src="images/{{backgroundImage}}" alt="">
+    <div class="boxSec1">   
+        <h1  class="h1">{{ title }}</h6>
+        <p class="pp1">{{ info }}</p>
+        <a href="#!tent"><button class="btnSecondary">Läs mer</button></a>  
+            <!-- varför fungerar inte knappen här!! -->
+    </div>
+    
+
+</div>
+
+<div class="container2">
+    <div ng-repeat="item in tents" class="boxSec2" >
+        <img src="images/{{ item.image }}" alt="" style="width: 278px; height: 220px;">
+            <h6 class="h6">{{ item.title }}</h6>
+            <p class="p2">{{ item.text }}</p>
+            <a href="#!store"><button class="btnPrimary">Köp</button></a>   
+    </div>  
+</div>
+
+<div class="container3">
+    <img src="/elbrus/images/olaOval.png" alt="" >
+    <div class="boxSec3">
+        <h1 class="hOla">Ola Kinnarmo - äventyrare</h6>
+        <p class="pOla">Jag trodde inte mina öron första gången jag hörde om ELBRUS men jag förstod genast att det här skulle kunna få mitt liv som äventyrare att bli bekvämare. Därför bestämde jag mej för att testa ELBRUS och nu följer tältet mej på alla mina resor i all väder i alla värdens hörn.</p>
+        <a href="#!tent"><button class="btnSecondary">Läs mer</button></a>          
+    </div>
+</div>
+
+<div class="container4">
+    <div class="boxSec4">
+        <img src="/elbrus/images/tentShape.png" alt="" >
+        <div class="flexItem">
+            <h1 class="hS4">Fortfarande inte övertygad?</h6>
+            <a href="#!contact" class="btnPos4"><button class="btnSecondary">Kontakta oss</button></a>  
+        </div>
+    </div>
+</div>
+
+
